@@ -1,0 +1,11 @@
+home: 
+    path: /
+    controller: App\Controller\HomeController::index
+
+swimsuit:
+  path: /swimsuit
+  controller: App\Controller\SwimsuitController::index
+
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
