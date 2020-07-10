@@ -1,15 +1,28 @@
 body {
-    font-size:16px;
-    font-family: 'Roboto Slab', serif;
-    color: #fff;
-    margin: 0;
-    padding: 0;
-    background-color: #90cde3;
+  overflow: hidden;
+  font-size:16px;
+  font-family: 'Roboto Slab', serif;
+  color: #fff !important;
+  margin: 0;
+  padding: 0;
+ 
 }
 
 h1 {
-  font-size: 6em;
-    font-family: 'Monoton', cursive;
+  font-size: 6em !important;
+}
+
+a {
+  color: white;
+  overflow: hidden;
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #356E67;
+  text-decoration: none;
 }
 
 figure {
@@ -24,16 +37,41 @@ figure {
   animation: clouds_animation 75s linear infinite;
 }
 
+ul {
+  list-style: none;
+}
+
 @keyframes clouds_animation {
   
   0%  {background-position: 0 0;}
   100%  {background-position: -2122px 0;}
 }
 
+.bg-blue {
+  background-color: #B3CBE3;
+}
+
+.brand-logo, .brand-title {
+  font-size: 2.5em;
+  font-family: 'Monoton', cursive;
+  color: white;
+}
+
 .home {
-  background-color: rgba(249, 239, 179, 0.6);
+  background-color: rgba(205, 205, 205, .2);
 }
 
 .h-100vh {
   height: 100vh;
+}
+
+.btn-outline-light:hover {
+  color: white;
+  background-color: #356E67;
+  border-color: #356E67;
+}
+
+.zoom a:hover{
+  transform: scale(1.1);
+  transition: all ease 500ms;
 }

@@ -6,17 +6,17 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class SwimsuitController extends AbstractController
+class AboutController extends AbstractController
 {
 
 	/**
-	 * @Route("/nos-maillots", name="swimsuit.index")
+	 * @Route("/notre-histoire", name="about")
 	 * @return Response
 	 */
 	public function index(): Response
 		{
-			return $this->render('swimsuit/index.html.twig', [
-				'current_menu' => 'swimsuits'
+			return $this->render('pages/about.html.twig', [
+				'current_menu' => 'about'
 			]);
 		}
 }

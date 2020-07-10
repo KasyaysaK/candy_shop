@@ -4,19 +4,21 @@
 
 {% block body %}
 	<div>
-	 <figure>
-   	 	<img width="100%" src="/images/other-main.jpg">
-	</figure>
-	<div class="filter"></div>
-</div>
+		<figure>
+	   	 	<img width="100%" src="/images/other-main.jpg">
+		</figure>
+	</div>
 
-<div class="container h-100vh">
-	<div class="row align-items-center text-center h-100">
-		<div class="col-md-8 mx-auto rounded home p-4">
-			<h1>Candy Shop</h1>
-			<p>L'été est enfin là, shoppe ton maillot dès maintenant ! Notre enseigne vous propose des maillots de bain en provenance de l'Amérique du Sud. Ambience caliente assurée ! </p>
-			<a href=" {{ path('swimsuit.index') }} " class="btn btn-outline-success btn-lg">Voir la boutique</a>
+	{{ include('_navbar.html.twig') }}
+
+	<div class="container h-100vh">
+
+		<div class="row align-items-center text-center h-100">
+			<div class="col-md-8 mx-auto rounded home p-4">
+				<h1 class="brand-title">Féline</h1>
+				<h4>L'été est enfin là, libère ton côté animal et shoppe dès maintenant tes outfits ! Notre enseigne vous propose une collection de vêtements et accessoires en provenance de l'Amérique du Sud. Ambiance caliente assurée ! </h4>
+				<a href="{{ path('swimsuit.index') }}" class="btn btn-outline-light btn-lg">Voir la boutique</a>
+			</div>
 		</div>
 	</div>
-</div>
 {% endblock %}
